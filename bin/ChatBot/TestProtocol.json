@@ -1,0 +1,196 @@
+{
+	"questions" : [
+		{"question" : {
+			"id" : "1",
+			"text" : "When were you diagnosed with type 2 diabetes?",
+			"type" : "open",
+			"answers" : [],
+			"next_question" : "2"
+		}},
+		{"question" : {
+			"id" : "2",
+			"text" : "What kind of doctor diagnosed your diabetes?",
+			"type" : "open",
+			"answers" : [
+				{
+					"answer" : {"id" : "Family",
+								"text" : "Family",
+								"followup" : ""
+					}
+				},
+				{
+					"answer" : {"id" : "optometrist",
+								"text" : "Optometrist",
+								"followup" : ""
+					}
+				}
+			],
+			"next_question" : "3"
+		}},
+		{"question" : {
+			"id" : "3",
+			"text" : "What kind of treatement?",
+			"type" : "single",
+			"answers" : [
+				{
+					"answer" : {"id" : "no medication",
+								"text" : "No Medication",
+								"followup" : ""
+					}
+				},
+				{
+					"answer" : {"id" : "non-insulin medication",
+								"text" : "Non-Insulin Medication",
+								"followup" : "200"
+					}
+				},
+				{
+					"answer" : {"id" : "insulin medication",
+								"text" : "Insulin Medication",
+								"followup" : "300"
+					}
+				}
+			],
+			"next_question" : "4"
+		}},
+		{"question" : {
+			"id" : "4",
+			"text" : "Do you suffer from any of?",
+			"type" : "multiple",
+			"answers" : [
+				{
+					"answer" : {"id" : "neuropathy",
+								"text" : "Neuropathy",
+								"followup" : "400"
+					}
+				},
+				{
+					"answer" : {"id" : "nephropathy",
+								"text" : "Nephropathy",
+								"followup" : "500"
+					}
+				},
+				{
+					"answer" : {"id" : "retinopathy",
+								"text" : "Retinopathy",
+								"followup" : "600"
+					}
+				},
+				{
+					"answer" : {"id" : "no",
+								"text" : "No",
+								"followup" : ""
+					}
+				}
+			],
+			"next_question" : "5"
+		}},
+		{"question" : {
+			"id" : "5",
+			"text" : "Have you ever suffered from heart attack?",
+			"type" : "single",
+			"answers" : [
+				{
+					"answer" : {"id" : "yes",
+								"text" : "Yes",
+								"followup" : ""
+					}
+				},
+				{
+					"answer" : {"id" : "no",
+								"text" : "No",
+								"followup" : ""
+					}
+				}
+			],
+			"next_question" : ""
+		}},
+		{"question" : {
+			"id" : "200",
+			"text" : "What non insulin medications?",
+			"type" : "open",
+			"answers" : [],
+			"next_question" : ""
+		}},
+		{"question" : {
+			"id" : "300",
+			"text" : "which insulin medications?",
+			"type" : "open",
+			"answers" : [],
+			"next_question" : "301"
+		}},{"question" : {
+			"id" : "301",
+			"text" : "What is the frequency of hypoglycemic?",
+			"type" : "open",
+			"answers" : [],
+			"next_question" : ""
+		}},
+		{"question" : {
+			"id" : "400",
+			"text" : "Have you seen a neurologist?",
+			"type" : "single",
+			"answers" : [
+				{
+					"answer" : {"id" : "yes",
+								"text" : "Yes",
+								"followup" : ""
+					}
+				},
+				{
+					"answer" : {"id" : "no",
+								"text" : "No",
+								"followup" : ""
+					}
+				}
+			],
+			"next_question" : ""
+		}},
+		{"question" : {
+			"id" : "500",
+			"text" : "Have you seen nephrologist?",
+			"type" : "single",
+			"answers" : [
+				{
+					"answer" : {"id" : "yes",
+								"text" : "Yes",
+								"followup" : "501"
+					}
+				},
+				{
+					"answer" : {"id" : "no",
+								"text" : "No",
+								"followup" : ""
+					}
+				}
+			],
+			"next_question" : ""
+		}},
+		{"question" : {
+			"id" : "501",
+			"text" : "What was your last creatine value?",
+			"type" : "open",
+			"answers" : [],
+			"next_question" : ""
+		}},
+		{"question" : {
+			"id" : "600",
+			"text" : "Have you seen ophtalmologist?",
+			"type" : "single",
+			"answers" : [
+				{
+					"answer" : {"id" : "yes",
+								"text" : "Yes",
+								"followup" : ""
+					}
+				},
+				{
+					"answer" : {"id" : "no",
+								"text" : "No",
+								"followup" : ""
+					}
+				}
+			],
+			"next_question" : ""
+		}}
+	]
+}
