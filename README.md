@@ -10,3 +10,5 @@ In regards to the conversation flow. I've decided that the questions list will n
 The questions type I've listed are "open","single" and "multiple" as this are defined in the spec. With that said, I did think of many other question types and decided they are out of the scope for this exercise. One type I thought of was a question that can accept several of the possible answers but not all of them or a question that one answer makes the other obsulete. I've thought about a way to represent this type of questions with a generic format and it seemed to overcomplicate each question and answer data structure. The implemetation allows to questions type to override the load operation so adding questions with specific attributes is easy.
 
 The engine just outputs the conversation but it is saved in a json format so it can be transfered or saved for other use cases as I wasn't sure what is the exact requirement.
+
+Regarding answers identifier - I used the lowercase of the text for simplicity as I don't think the engine itself should handle the answer validation but a complete seperate component and I wasn't convinced this is important for the specific exercise.
